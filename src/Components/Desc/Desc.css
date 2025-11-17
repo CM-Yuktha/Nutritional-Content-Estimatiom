@@ -1,0 +1,51 @@
+/* Section spacing and background */
+.desc {
+  padding: 56px 0;
+  background: var(--bg-surface, #f7fafc);
+}
+
+/* Responsive grid inside your container */
+.desc__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 900px) {
+  .desc__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .desc__grid { grid-template-columns: 1fr; }
+}
+
+/* Cards */
+.desc__card {
+  background: var(--bg-card, #ffffff);
+  color: var(--text, #0f172a);
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 20px rgba(2, 8, 23, 0.04);
+  text-align: left;
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 80ms ease;
+}
+
+.desc__card:hover {
+  border-color: var(--primary, #2563eb);
+  box-shadow: 0 10px 26px rgba(37, 99, 235, 0.08);
+  transform: translateY(-1px);
+}
+
+/* Typography */
+.desc__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: var(--text, #0f172a);
+}
+
+.desc__text {
+  margin: 0;
+  color: var(--text-muted, #475569);
+  line-height: 1.6;
+}

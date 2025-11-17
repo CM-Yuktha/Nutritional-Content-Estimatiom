@@ -1,0 +1,344 @@
+/* Enhanced Nutrition Result Styles */
+
+/* Result Container */
+.est-result {
+  margin: 20px auto 0;
+  background: var(--bg-card, #fff);
+  border: 1px solid var(--border, #e2e8f0);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 20px rgba(2, 8, 23, 0.04);
+  max-width: 800px;
+  font-family: inherit;
+}
+
+/* Header Section */
+.est-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--border, #e2e8f0);
+}
+
+.est-result-title-section {
+  flex: 1;
+}
+
+.est-result-title {
+  margin: 0 0 4px 0;
+  font-size: 20px;
+  color: var(--text, #0f172a);
+  font-weight: 600;
+}
+
+.est-result-sub {
+  margin: 0;
+  color: var(--text-muted, #475569);
+  font-size: 14px;
+}
+
+.est-result-cal-section {
+  text-align: right;
+  margin-left: 16px;
+  flex-shrink: 0;
+}
+
+.est-result-cal-total {
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary, #2563eb);
+  line-height: 1.2;
+}
+
+.est-result-cal-items {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted, #475569);
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* Table Styles - Clean Professional Look */
+.est-result-macros-table,
+.est-result-items-table {
+  margin: 24px 0;
+}
+
+.macros-table,
+.items-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  font-size: 14px;
+}
+
+.macros-table thead,
+.items-table thead {
+  background: var(--primary, #2563eb);
+  color: white;
+}
+
+.macros-table th,
+.items-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.items-table th:nth-child(1) { width: 40%; }
+.items-table th:nth-child(2) { width: 25%; }
+.items-table th:nth-child(3) { width: 20%; }
+.items-table th:nth-child(4) { width: 15%; }
+
+.macros-table tbody tr,
+.items-table tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+.macros-table tbody tr:hover,
+.items-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.table-row-alt {
+  background: #f8fafc;
+}
+
+/* Table Body Cells */
+.macros-table td,
+.items-table td {
+  padding: 12px 16px;
+  vertical-align: top;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.macros-table td:first-child,
+.items-table td:first-child {
+  font-weight: 500;
+  color: var(--text, #0f172a);
+}
+
+.macros-table td strong {
+  color: var(--primary, #2563eb);
+  font-weight: 600;
+}
+
+/* Calorie Badges in Items Table */
+.cal-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--success, #10b981);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 60px;
+  justify-content: center;
+}
+
+.cal-unknown {
+  color: var(--text-muted, #64748b);
+  font-style: italic;
+}
+
+/* Item Notes */
+.item-note {
+  color: var(--text-muted, #64748b);
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+/* Items Summary */
+.items-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.items-count,
+.items-total {
+  color: var(--text-muted, #64748b);
+  font-size: 13px;
+}
+
+.items-total {
+  font-weight: 500;
+  color: var(--primary, #2563eb);
+}
+
+/* Notes Section */
+.est-result-notes {
+  margin: 24px 0;
+  padding: 16px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 1px solid #bae6fd;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary, #2563eb);
+}
+
+.notes-title {
+  margin: 0 0 8px 0;
+  color: var(--text, #0f172a);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.notes-content {
+  color: var(--text-muted, #475569);
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Quick Stats Bar */
+.est-result-stats {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border, #e2e8f0);
+}
+
+.stat-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.stat-label {
+  color: var(--text-muted, #64748b);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  color: var(--primary, #2563eb);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .est-result {
+    margin: 16px;
+    padding: 16px;
+  }
+  
+  .est-result-header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+  
+  .est-result-cal-section {
+    margin-left: 0;
+    align-self: center;
+  }
+  
+  .macros-table th,
+  .items-table th,
+  .macros-table td,
+  .items-table td {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+  
+  .macros-table {
+    font-size: 13px;
+  }
+  
+  .est-result-stats {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .items-summary {
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .macros-table th:nth-child(4),
+  .macros-table td:nth-child(4),
+  .items-table th:nth-child(3),
+  .items-table td:nth-child(3),
+  .items-table th:nth-child(4),
+  .items-table td:nth-child(4) {
+    display: none;
+  }
+  
+  .items-table th:nth-child(1),
+  .items-table td:nth-child(1) {
+    width: 60%;
+  }
+  
+  .items-table th:nth-child(2),
+  .items-table td:nth-child(2) {
+    width: 40%;
+  }
+}
+
+/* Hover Effects */
+.macros-table tbody tr:hover td,
+.items-table tbody tr:hover td {
+  background: #eff6ff;
+}
+
+.items-table tbody tr:hover .cal-badge {
+  background: #059669;
+}
+
+/* Accessibility */
+.macros-table,
+.items-table {
+  border-collapse: collapse;
+}
+
+.macros-table th,
+.macros-table td,
+.items-table th,
+.items-table td {
+  border: none;
+}
+
+/* Print Styles */
+@media print {
+  .est-result {
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+  
+  .cal-badge {
+    background: #333 !important;
+    color: white !important;
+  }
+}
